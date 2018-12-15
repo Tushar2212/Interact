@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_blue"
+    android:id="@+id/login"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:background="@color/back_Teach"
+        android:id="@+id/backTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/back_Stu"
+        android:id="@+id/backStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/interact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Interact"
+        android:textColor="@color/colorPrimary"
+        android:textSize="90dp" />
+
+    <ImageView
+        android:id="@+id/ivStudent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ivTeacher"
+        android:layout_marginStart="53dp"
+        android:src="@drawable/student" />
+
+    <ImageView
+        android:id="@+id/ivTeacher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="47dp"
+        android:src="@drawable/teacher" />
+
+    <!--<TextView
+        android:id="@+id/subText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="62dp"
+        android:text="Student"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/subText2"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/interact"
+        android:layout_alignTop="@+id/subText1"
+        android:text="Teacher"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+-->
+    <TextView
+        android:id="@+id/subHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/interact"
+        android:layout_centerHorizontal="true"
+        android:text="Login As"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/enroll"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/teacherId"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_blue"
+        android:gravity="center"
+        android:hint="Enrollment Number"
+        android:textColor="#111"
+        android:textColorHint="#111"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/teacherId"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@color/background_blue"
+        android:gravity="center"
+        android:hint="Username"
+        android:textColor="#111"
+        android:textColorHint="#111"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="199dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textSize="15dp" />
+</RelativeLayout>
